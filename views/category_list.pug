@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+
+    div(class="categories-container")
+            h1 Categories
+            div(class='items')
+                each val in list_category 
+                    a(href='#') #{val.name} 
+                else 
+                    a(href="#") Add new +
+                a(href='#') Add new +
+    include foot.pug

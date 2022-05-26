@@ -1,0 +1,36 @@
+/* *{
+  border: 1px solid red;
+} */
+
+.home-body {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 600px;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-description {
+  width: 500px;
+  height: auto;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  word-spacing: 5px;
+  font-style: italic;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.home-description > img {
+  align-self: center;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+}
+
+

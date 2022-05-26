@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family:"Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url('../images/pexels-cottonbro-7504591.jpg');
+    background-color: rgb(179, 133, 133);
+    background-size: 100%;
+    background-repeat: repeat-y;
+  }
+  
+  .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(221, 131, 131, 0.5);
+  }
+  .navbar > h1 {
+    font-family: monospace , sans-serif;
+  }
+  .navbar > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+  }
+  
+  .navbar > button {
+    cursor: pointer;
+    padding: 7px;
+    background-color: rgb(27, 67, 94);
+    color: white;
+    font: 25px 'monospace';
+    font-weight: bold;
+    border-radius: 20%;
+  }

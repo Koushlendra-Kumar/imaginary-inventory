@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+
+    div(class="contact-page")
+        h1 Contact us
+        form(action="", method="") 
+            label(for="name") Name
+            input(type="text", name="name") 
+            label(for='email') Your Email 
+            input(type="text", name="email")
+            label(for="message") Message 
+            textarea(name="message") 
+            input(type="button",class = "sub", value="Submit")
+    include foot.pug 

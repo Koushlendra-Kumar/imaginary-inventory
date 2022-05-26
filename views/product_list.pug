@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+
+    - var n = 0;
+    div(class="products-container")
+        each val in list_product
+            div(class="individual-items") 
+                h3 #{val.name}
+                h4 Price $#{val.price}
+                p #{val.numberInStock} In stocks
+        else 
+            div(class='individual-items') +
+        div(class='individual-items add-new') 
+            h1 +    
+    include foot.pug    

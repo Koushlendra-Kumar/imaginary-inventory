@@ -1,0 +1,23 @@
+
+.footer {
+    background-color: rgb(53, 47, 47);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  .pages-links , .social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .pages-links > a , .social-links > a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  .footer > .copyright {
+    width: 300px;
+  }
