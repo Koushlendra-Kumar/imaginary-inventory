@@ -1,4 +1,5 @@
 var createError = require('http-errors');
+var dotenv = require('dotenv').config();
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -10,7 +11,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 //mongoose connection
 var mongoose =require('mongoose');
-var mongoDB = 'mongodb+srv://inventory:topproject@inventory.zb6an.mongodb.net/imaginary-inventory?retryWrites=true&w=majority';
+var mongoDB = process.env.mongoDB_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
   .then(()=>console.log('connected'))
   .catch(() => console.log('error found'));
