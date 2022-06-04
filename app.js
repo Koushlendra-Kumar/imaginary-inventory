@@ -14,14 +14,16 @@ var app = express();
 
 app.use(helmet());
 app.use(compression());
-//mongoose connection
-var mongoose =require('mongoose');
-var mongoDB = process.env.mongoDB_URI;
+var mongoose = require('mongoose');
+// Set up mongoose connection
+
+var mongoDB = process.env.MONGODB_URI ;
+
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
-  .then(()=>console.log('connected'))
-  .catch(() => console.log('error found'));
+  .then(()=> console.log('connected'))
+  .catch((err) => console.log('err'));
 var db = mongoose.connection;
-db.on('error', console.error.bind(console, "MongoDB connection error:"));
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
