@@ -7,8 +7,13 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var compression = require('compression');
+var helmet = require('helmet');
 
 var app = express();
+
+app.use(helmet());
+app.use(compression());
 //mongoose connection
 var mongoose =require('mongoose');
 var mongoDB = process.env.mongoDB_URI;
